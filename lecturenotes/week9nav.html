@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        nav{
+            background-color: black;
+            padding: 10px;
+            color: white;
+            display: flex; /* display flex always on row */
+        }
+        nav div{padding: 5px}
+        .flexend {justify-content: flex-end;} /* justify content goes on row */
+        .around{justify-content: space-around;}
+        .between{justify-content: space-between;}
+        .left, .right {display:flex;}
+        .split {justify-content:space-between;}
+    </style>
+</head>
+<body>
+    <h1>Navigation 4 Ways</h1>
+        <h2>Right Side</h2>
+
+            <Nav class="flexend">
+                <div>Home</div>
+                <div>About Us</div>
+                <div>Products</div>
+                <div>Contacts</div>
+            </Nav>
+
+        <h2>Space Around</h2>
+        <Nav class="around">
+            <div>Home</div>
+            <div>About Us</div>
+            <div>Products</div>
+            <div>Contacts</div>
+        </Nav>
+
+        <h2>Space Between</h2>
+        <Nav class="between">
+            <div>Home</div>
+            <div>About Us</div>
+            <div>Products</div>
+            <div>Contacts</div>
+        </Nav>
+
+        <h2>Split </h2>
+
+        <Nav class="split"> <!-- childern of split are left and right -->
+            <div class="left">
+                <div>Home</div>
+                <div>About Us</div>
+                <div>Products</div>
+                <div>Contacts</div>
+            </div>
+            <div class="right">
+                <div>Facebook</div>
+                <div>X</div>
+            </div>
+        </Nav>
+    
+</body>
+</html>

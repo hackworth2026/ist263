@@ -1,0 +1,45 @@
+body {
+    background-color:rgb(35, 33, 33);
+    color: white;}
+
+h1{color: white;}
+
+nav {background-color:rgb(31, 29, 29);}
+
+@media only screen and (max-width: 800px) {
+    nav {
+        display: block;
+    }
+
+    nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    nav span.seperator {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 801px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    nav a {
+        width: auto;
+        display: inline;
+    }
+
+    nav span.seperator {
+            display: none;
+        }
+}
+
+
+

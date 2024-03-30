@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <link rel= "stylesheet" href= "styles.css">
+   <meta charset="utf-8">
+   <meta name ="viewport" content="width=device-width, intital-scale=1.0">
+   <title>Contacts</title>
+   <style>
+      a:visited{color:gold }
+
+      a:hover{color:blue}
+
+      a:link{color:blue;}
+
+      nav:state {padding:10px;}
+
+      .part1 {display: flex; flex-direction: column; padding: 20px; background-color: rgb(124, 128, 120);border-radius: 1em;}
+
+      .part2, .part3 { margin: 10px;background-color: rgb(123, 123, 122); border-radius: 0.5em;}
+
+      .contact-section {display: flex; justify-content: space-between;}
+
+      .contact-info {flex: 1; margin-right: 20px;}
+
+      .map {flex: 2;}
+
+      .contact-form {margin-top: 20px;}
+
+      .contact-form label,.contact-form input,.contact-form textarea { display: block; margin-bottom: 10px;}
+
+      .contact-form input[type="submit"] {background-color: blue; color: white; border: none; padding: 10px 20px; cursor: pointer;}
+      
+      .form {flex-wrap: wrap;}
+
+   </style>
+</head>
+
+<body>
+   <nav class="important">
+      <a href="index.html">Index</a>
+      <span class="seperator">|</span>
+      <br> 
+      <a href="contact.html">Contact</a>
+      <span class="seperator">|</span>
+      <br> 
+      <a href="skills.html">Skills</a>
+  </nav>
+    <h1>Contact</h1>
+
+    <div class="part1">
+      <div class="contact-section">
+          <div class="contact-info">
+      <h2> Name: Hiram Hackworth</h2>
+      <p> Current Address: 505 Comstock Avenue</p>
+         <a href="mailto:ahhackwo@syr.edu">Hiram Hackworth Email</a>
+         <a href="https://www.linkedin.com">
+         <img src= "../images/linkedin-logo_sized.png">
+         </a>
+   </div>
+         <a href="http://www.linkedin.com/in/adolphus-hiram-hackworth-4a456024b">My Linkedin Profile</a> 
+         
+         <br>
+
+      <div class="form">
+         <div class="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.0183138127204!2d-76.13166492408135!3d43.04104617113777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f30b1fc4a0f7%3A0x14b179d0fbf09210!2sBooth%20Hall!5e0!3m2!1sen!2sus!4v1707000670330!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+         <div class="contact-form">
+                  <form action="https://formspree.io/f/xnqepryk" method="POST">
+                  <label for="reason for contact?">Reason for Contact?</label><br>
+                  <textarea id="reason for contact?" name ="reason for contact?" rows="3" cols="60"></textarea><br>
+                  <input type="radio" id="Response from email" name="Response from email? or phone?"
+                  value="Response from email">
+                  <label for="Response from email?">Response from email?</label>
+                  <input type="radio" id="or phone?"
+                  name="Response from email? or phone?" value="or phone?">
+                  <label for="or phone?">or phone?</label>
+                  <p>Do you have another desired choice of contact? </p>
+                  <input type="checkbox" id="yes" name="desired_choice_of_contact" value="yes">
+                  <label for="yes">Yes</label>
+                  <input type="checkbox" id="no" name="desired_choice_of_contact" value="no">
+                  <label for="no">No</label><br>
+                  <input type="submit" value="Send Form">
+                  </form>
+         </div>
+
+      </div>
+
+</body>
+
+</html>

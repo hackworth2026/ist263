@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://laferger.github.io/ist263/lab12.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11 preview</title>
+    <link rel="stylesheet" href="./animate2.css">
+    <script>
+        function WinnerMessage () {
+            document.getElementById("messages").innerHTML = 'You Won!';
+         }
+
+        function TryAgain () {
+            document.getElementById("messages").innerHTML = 'Wrong Shell - Try Again';
+        }
+
+        function ShuffleShells() {
+            document.getElementById("first").style.order = Math.floor((Math.random() * 3) + 2);
+        }
+
+    </script>
+    <style>
+        .container {
+            display: flex;
+        }
+        #first {order: 1;}
+        #second {order: 2;}
+        #third {order: 3;}
+    </style>
+</head>
+<body>
+    <h1>Choose a Walnut</h1>
+
+    <div class="container">
+    <img src="./walnut.png" alt="first walnut" id="first" class="first" onclick= "WinnerMessage();">
+    <img src="./walnut.png" alt="second walnut" id="second" class="second" onclick="TryAgain();">
+    <img src="./walnut.png" alt="third walnut"  id="third" class="third" onclick ="TryAgain();">
+    </div>
+
+    <div id="messages"></div>
+
+    <body onload ="ShuffleShells();">
+
+</body></html>

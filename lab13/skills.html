@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <link rel= "stylesheet" href= "styles.css">
+        <meta charset="utf-8">
+        <meta name ="viewport" content="width=device-width, intital-scale=1.0">
+            <title>Skills</title>
+            <style>
+                th, td {
+                    border: 1px solid white;
+                }
+                a:visited{
+                    color:rgb(157, 157, 157)
+                }
+                a:hover{
+                    color: blue
+                }
+                a:link{
+                    color:rgb(11, 125, 207);
+                }
+                nav:state {
+                    padding:10px;
+                }
+                .header {
+                    text-align: center;
+                }
+                .page {
+                    text-align: center;
+                }
+                .costumer, .shield, .window, .code, .gear{ 
+                    display:block;
+                    margin: 0;
+                    width: 50px;
+                }
+                .skill{
+                    display: flex;
+                    flex: 3;
+                }
+                .other{
+                    background-color: rgb(148, 138, 138);
+                    border-radius: 9px;
+                }
+                .flexbox1, .skill {
+                    justify-content:space-evenly;
+                }
+                .flexbox2 {
+                    display: flex;
+                    flex-direction: row-reverse;
+                }
+                .other{
+                    flex: 0 0 auto;
+                    margin-left: 60px;
+                } 
+                .skip{
+                    background-color: #00c3ff;
+                    padding: 8px;
+                    border: 2px solid #000000;
+                    text-decoration: none;
+                    position: absolute;
+                    top: 10px;
+                    left:-999px;
+                }
+                .skip:focus {
+                    left: 10px; 
+                }   
+            </style>
+    </head>
+
+    <body>
+        <nav class="important">
+                <a href="#skip" class="skip">Skip to Content</a><br>
+                <a href="index.html">Index</a>
+                <span class="seperator">|</span>
+                <br>
+                <a href="contact.html">Contact</a>
+                <span class="seperator">|</span>
+                <br>
+                <a href="skills.html">Skills</a>
+        </nav>
+
+        <h1 class="header">Techncial Skills</h1>
+        <p id="skip" class="page"> This is the skills page for Hiram Hackworth, majoring in information technology. His future career is in information security engineering, his skills shown below are a reflection of his progress to his career.</p>
+<br>
+
+<div class="flexbox1">
+
+    <div class="skill">
+    <div class="costumer">
+    <img src = "../images/phone-solid.svg" alt= "Phone"> <p>Costumer Service</p>
+    </div>
+
+    <br>
+
+    <div class="shield">
+    <img src="../images/shield-solid.svg" alt="Shield"> <p>Security</p>
+    </div>
+
+    <br>
+
+    <div class="window">
+    <img src="../images/window-restore-solid.svg" alt="Computer Window"> <p>Windows</p>
+    </div>
+
+    <br>
+
+    <div class="code">
+    <img src="../images/code-solid.svg" alt="Coding Symbol"> <p>Python Coding</p>
+    </div>
+
+    <br>
+
+    <div class="gear">
+    <img src="../images/gears-solid.svg" alt="Gear"> <p>Computer Software</p>
+    </div>
+    </div>
+
+</div>
+
+<div class ="flexbox2">
+    <div class="other">
+
+    <h2>Other Skills</h2>
+
+    <p>Project Management</p>
+    <p>Artifical Intelligence Anaylsis</p>
+    <p>Social Media</p>
+    <p>Data anaylsis</p>
+    <p>HTML</p>
+    </div>
+</div>
+
+
+    </body>
+
+</html>

@@ -3,6 +3,7 @@
 <head>
     <link rel= "stylesheet" href= "mystyles.css">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 5</title>
     <style>
@@ -42,21 +43,25 @@
                 margin-right: 600px;
                 align-items: center;
              }
+        .colongeImage img{
+            height: 950px;
+        }
 
         .titles{
             color: white;
         }
         
-        .content{
-            padding: 70px;
-            margin-top: 5px;
+        .content {
+            padding: 60px;
+            margin-top: 4px;
         }
         .content div {
-            padding: 40px;
+            padding: 45px;
         }
         .content {
             display:flex;
             flex-wrap: wrap;
+            justify-content: space-around;
         }
         .diorBig {
             min-width: 300px;
@@ -67,7 +72,7 @@
             flex:1
         }
         .creedBig{
-            min-width: 350px;
+            min-width: 300px;
             flex:1
         }
 
@@ -79,7 +84,9 @@
         }
 
         h3{
-            font-size: 37px
+            font-size: 37px;
+            background-color: grey;
+            border-radius:10px;
         }
         h1,.h2,.h3{
             font-family: "Schibsted Grotesk", sans-serif;
@@ -87,7 +94,56 @@
             font-weight: 500px;
             font-style: normal;
         }
+        .CologneHead{
+            color: white;
+            display: flex;
+            flex-direction: initial;
+            font-family: "Schibsted Grotesk", sans-serif;
+        }
+       .page {
+           font-size: 17px;
+        }
+        .textW{
+            color:rgb(186, 186, 186);
+        }
+        .button {
+            background-color: rgb(138, 138, 138);
+            cursor: pointer;
+            padding: 5px;
+        }
+        #modal {
+            background-color: #ababab;
+            color: #6b6b6b;
+            border: 2px solid #333131;
+            padding: 10px;
+            width: 200px;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            margin-left: -100px;
+            margin-top: -100px;
+            display:none;
+        }
+        input{
+            margin-bottom: 2px;
+        }
+        #close{
+            position:absolute;
+            top: 7%;
+            right: 7%;
+            text-align: right;
+            margin: 0px;
+            cursor: pointer;
+        }
     </style>
+    <script>
+        function openModal() {
+            document.getElementById("modal").style.display = "flex";
+        }
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -113,15 +169,14 @@
             </nav>
 
             <div class="bigImage"> 
-
-                    <div class="imageP">
+                <div class="imageP">
                             <div class="Sbanner">
                                 <img src="../images/night_image.jpeg" alt= "Night Image"> 
                             </div>
                                 <p class="page">
-                                    "In this modern world, a persons  aroma holds a powerful value in your appearance to society. Now, more than anyone we understand this value. And our most prominent goal is to help more people understand their own scent and how to reshape their image" -Hiram.
+                                    "In this world, your scent holds a powerful value toward your appearance to society. Don't settle with the norm, excel beyond the standards. Choose to live lasvishly." -Hiram.
                                 </p>
-                    </div>
+                </div>
 
                     <br>
 
@@ -130,15 +185,17 @@
                             <hr>
                             <h1 class="heading">How do I Find the Right Frangance for Me?</h1>
                             <p class="pages">
-                                "Our websites featured scent quiz. provides the most adept testing. Helping you find the fragance that is best suited to your desires. Your image is your greatest asset, especially to us" -Hiram.
+                                "Our websites featured scent quiz. provides the most adept testing. Helping you find the fragance that is best suited to your desires. Your image defines you, be bold!" -Hiram.
                             </p>
                             <div class="FraganceQuiz">
+                                <a href="./frangancequiz.html">
                                 <button onclick="FraganceQuiz()">Fragance Quiz</button>
-                        </div>
+                                </a>
+                            </div>
                         </div>
 
-                    </div>
-    </div>
+                     </div>
+            </div>
 
             <div class="colongeImage">
                 <div class="left2">
@@ -151,16 +208,17 @@
         <div class="titles">
             <h3>Customer Reviews</h3>
         </div>
-        
-        
+
         <div class="content">
             <div class="image">
+                <h2 class="CologneHead">Dior Savuage</h2>
                 <img src="../images/Sauvage.jpg" alt="Dior Sauvage" class="diorBig">
-                <p class="word1">Briizabela (4.7/5): “This was the first cologne I bought my boyfriend and he loves it! I am obsessed with these scent as well. It’s perfect for an everyday or if you just want to use it for a nice date night. I love the packaging and the magnetic top it’s a nice touch. It’s just such a staple cologne to have and a must have in your cologne collection. I have bought my boyfriend a new bottle every year because it is that good”.</p>
+                <p class="word1">Briizabela (4.7/5): <br> “This was the first cologne I bought my boyfriend and he loves it! I am obsessed with these scent as well. It’s perfect for an everyday or if you just want to use it for a nice date night. I love the packaging and the magnetic top it’s a nice touch. It’s just such a staple cologne to have and a must have in your cologne collection. I have bought my boyfriend a new bottle every year because it is that good”.</p>
             </div>
                 <div class="image">
+                    <h2 class="CologneHead">Creed Aventus</h2>
                     <img src="../images/Creed.jpg" alt="Creed Aventus" class="creedBig">
-                    <p class="word2"> Annetta Waller (5/5): “Ah, behold the Creed Aventus 50ML cologne, a scent so alluring it could make a stoic stone statue crack a grin! Picture this: a dash of sophistication, a sprinkle of charisma, and a hint of aristocratic allure – that's the power of Aventus!
+                    <p class="word2"> Annetta Waller (5/5): <br> “Ah, behold the Creed Aventus 50ML cologne, a scent so alluring it could make a stoic stone statue crack a grin! Picture this: a dash of sophistication, a sprinkle of charisma, and a hint of aristocratic allure – that's the power of Aventus!
 
                         With every spritz, you transform into a suave secret agent, ready to out-charm James Bond himself! People will follow your scent like lemmings, drawn to the magnetic pull of this olfactory masterpiece.
                         
@@ -172,12 +230,29 @@
                         </p>
                 </div>
                     <div class="image">
+                        <h2 class="CologneHead">Y Le Parfum</h2>
                         <img src="../images/saint_laurent.jpg" alt="Y Le Parfum" class="parfumBig">
-                        <p class="word3">Rubyyyo (5/5): “Smells great! Bought for my husband and one spray is more than enough! He gets lots of compliments every time he wears it! Definitely buying again!” .</p>
+                        <p class="word3">Rubyyyo (5/5): <br> “Smells great! Bought for my husband and one spray is more than enough! He gets lots of compliments every time he wears it! Definitely buying again!”.
+                        </p>
                     </div>
+                        <p><a class="button" onclick="openModal();">Leave a Review</a></p>
+
+                        <div id="modal">
+                            <p id="close" onclick="closeModal();">X</p>
+                            <form>
+                                <label for="name">Name</label><br>
+                                <input type="text" id="name" name="name"><br>
+                                <label for="email">Email</label><br>
+                                <input type="text" id="email" name="email"><br>
+                                <label for="inputtext">Input Text</label><br>
+                                <textarea id="inputtext" name="inputtext" rows="4" cols="20"></textarea>
+                                <input type="submit" value="Leave a Review">
+                            </form>
+                        </div>
         </div>
     </div>
       
     
+
 </body>
 </html>

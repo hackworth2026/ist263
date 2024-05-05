@@ -1,6 +1,8 @@
 body {
-    background-color:#828282;
-    color: rgb(2, 2, 2);}
+    background-color:#797575;
+    color: rgb(2, 2, 2);
+    overflow-x: hidden;
+  }
 
 h1{color: #111010;}
 
@@ -25,7 +27,7 @@ margin-top: 10px;
 }
 
 .right a, .AromaVouge,.signIn {
-margin-right: 20px; 
+margin-right: 70px; 
 }
 
 .right, .seperator,.AromaVouge,.signIn {
@@ -34,7 +36,7 @@ margin-right: 10px;
 
 nav:state {padding:10px;}
 
-nav {background-color:#191818;}
+nav {background-color:#000000;}
 
 .imageP img {
     display: block;
@@ -165,7 +167,7 @@ nav {background-color:#191818;}
     nav {
         display: flex;
         justify-content: space-between;
-        
+        }
     }
 
     nav a {
@@ -176,14 +178,33 @@ nav {background-color:#191818;}
     nav span.seperator {
             display: inline;
         }
-}
 
+@media only screen and (max-width: 500px) {
+        .split {
+        display:flex;
+        flex-direction: column;
+        }
+        nav.split {
+          display: flex;
+          justify-content:center
+        }
+        .whole-Type {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+        }
+        .body {
+         overflow-x: auto;
+        }
+
+      }
 .container {
     display: flex;
     flex-direction: column;
     background-color:#000000;
     width: 100%;
-    margin-left: 20px;
+    position: absolute;
+    left: 1.5%
 }
 
 .titles {
@@ -212,11 +233,24 @@ nav {background-color:#191818;}
   .seperator {
     margin: 0 5px; 
   }
+  @media only screen and (max-width: 200px) {
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+}
+.container{
+  width: 97.64%;
+}
+
+@media only screen and (min-width: 400px){
+  .content img, .content p{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+  }
+}
   
   .titles {
     display: flex;
@@ -230,12 +264,6 @@ nav {background-color:#191818;}
   
   .separator {
     margin: 0 5px;
-  }
-  
-  .content {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
   }
   
   .image {

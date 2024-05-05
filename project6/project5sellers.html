@@ -16,9 +16,7 @@
 
         nav.split, h1 {
             display: flex;
-            justify-content: space-between;
             justify-content: center;
-            align-items: center;
             padding: 10px;
         }
 
@@ -34,7 +32,7 @@
 
         .top-images {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             margin-top: 20px;
         }
 
@@ -42,6 +40,36 @@
             width: 190px;
             height: auto;
             margin: 20px;
+        }
+
+        .top-images1 p {
+            margin-top: 20px;
+            float: left;
+            margin-left: 1;
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        .top-images1 img {
+            width: 190px;
+            height: 310px;
+            margin: 20px;
+            margin-right:50px;
+        }
+
+        .top-images2 p {
+            margin-top: 20px;
+            float: right;
+            margin-left: 1;
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        .top-images2 img {
+            width: 190px;
+            height: 294px;
+            margin: 20px;
+            margin-left: 195px;
         }
 
         .bottom-images {
@@ -56,24 +84,32 @@
             margin-right: 0 auto;
         }
 
-        .middle-image {
+        .middle-image p {
             text-align: center;
             margin-top: 20px;
+            padding: 10px;
+            margin-left: 34.4%;
         }
 
         .middle-image img {
-            width: 200px;
+            width: 300px;
             height: auto;
-            margin: 0 auto;
+            margin-left: 38.5%;
+    
         }
 
         .image-text {
             text-align: center;
             font-size: 15px;
-            width: 20%;
+            max-width: 30%;
             overflow: hidden;
             word-wrap: break-word;
-            margin: 0 auto;
+            margin:0 auto;
+            border: solid black 2px;
+            background-color: rgb(77, 76, 76);
+            color: white;
+
+            
             
         }
         h1,.h2 {
@@ -81,6 +117,41 @@
             font-optical-sizing: auto;
             font-weight: 500px;
             font-style: normal;
+        }
+
+        nav.split a{
+            margin-left: 180px;
+            margin-right: 140px;
+      }
+
+      .bottom-images1 p {
+            margin-top: 20px;
+            float: left;
+            margin-left: 1;
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        .bottom-images1 img {
+            width: 180px;
+            height: 293px;
+            margin: 20px;
+            margin-right:50px;
+        }
+
+        .bottom-images2 p {
+            margin-top: 6px;
+            float: right;
+            margin-left: 1;
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        .bottom-images2 img {
+            width: 180px;
+            height: 294px;
+            margin: 1%;
+            margin-left: 195px;
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -101,34 +172,44 @@
         </div>
     </nav>
     <h1>Our Best Sellers</h1>
+    <div class="whole-Type"> 
+        <div class="top-images">
+            <div class="top-images1">
+                <img src="../images/chanel.jpg" alt="Image 1">
+                <p class="image-text">
+                "The fragrance features a fresh citrus accord followed by ambery cedar notes…Woods are amplified by Tonka Bean and Vanilla for heightened sensuality… New Caledonian Sandalwood unfolds at the base for greater depth. Bleu de Chanel is design for those who want to be more Freshness, energy, confidence and dominance over other men. Bleu de Chanel means ‘unexpected masculine spirit’. This cologne was created by Jacques Polge in 2010".  
+                </p>
+            </div>
+            <div class="top-images2">
+                <img src="../images/Creed.jpg" alt="Image 2">
+                <p class="image-text">
+                    "Aventus was inspired by the life of an emperor and evokes a sense of strength, power, and success on the one who wears this fragrance. This sophisticated and elegant scent has notes of pineapple, black currant, birch, amber and musk. Sexy and seductive, strong, and powerful, this scent has it all!”. The founder of this cologne is master perfumier, Oliver Creed, who released the product in late 2010".
+                </p>
+            </div>
+        </div>
+        
 
-    <div class="top-images">
-        <img src="../images/chanel.jpg" alt="Image 1">
-        <p class="image-text">
-           The fragrance features a fresh citrus accord followed by ambery cedar notes…Woods are amplified by Tonka Bean and Vanilla for heightened sensuality… New Caledonian Sandalwood unfolds at the base for greater depth. Bleu de Chanel is design for those who want to be more Freshness, energy, confidence and dominance over other men. Bleu de Chanel means ‘unexpected masculine spirit’. This cologne was created by Jacques Polge in 2010.  
-        </p>
-        <img src="../images/Creed.jpg" alt="Image 2">
-        <p class="image-text">
-             Aventus was inspired by the life of an emperor and evokes a sense of strength, power, and success on the one who wears this fragrance. This sophisticated and elegant scent has notes of pineapple, black currant, birch, amber and musk. Sexy and seductive, strong, and powerful, this scent has it all!”. The founder of this cologne is master perfumier, Oliver Creed, who released the product in late 2010.
-        </p>
-    </div>
+        <div class="middle-image">
+            <img src="../images/black_polo.jpg" alt="Image 3">
+            <p class="image-text">
+                "The cologne is described to have a modern scent that reflects sophistication, with slight application of robust tropical tang. Its tastefully chosen tones emanate sophistication and make it appropriate for any setting. For individuals looking for a scent that matches their style and demeanor, Polo Black is the ideal option because of its classic appeal and affiliation with Ralph Lauren, creator". 
+            </p>
+        </div>
 
-    <div class="middle-image">
-        <img src="../images/black_polo.jpg" alt="Image 3">
-        <p class="image-text">
-            The cologne is described to have a modern scent that reflects sophistication, with slight application of robust tropical tang. Its tastefully chosen tones emanate sophistication and make it appropriate for any setting. For individuals looking for a scent that matches their style and demeanor, Polo Black is the ideal option because of its classic appeal and affiliation with Ralph Lauren, creator. 
-        </p>
-    </div>
-
-    <div class="bottom-images">
-        <img src="../images/saint_laurent.jpg" alt="Image 4">
-        <p class="image-text">
-             The composition of the cologne, “Y Le Parfum is a sensual and intoxicating men’s fragrance by Yves Saint Laurent Beauté.  An intense interpretation of the Y signature scent, this men’s cologne is a new twist on the white and dark fougere that combines the bold, woody notes of Geranium and Cedarwood with fresh Lavender”. This is a personal favorite of mine.  The creator of this cologne is none other,  Yves Saint Laurent Beauté.
-        </p>
-        <img src="../images/Sauvage.jpg" alt="Image 5">
-        <p class="image-text">
-             Dior Sauvage Eau de Toilette opens with radiant top notes of Calabrian Bergamot, before Amberwood unleashes its powerfully woody trail. A Sauvage cologne for men inspired by wide-open spaces under a blue sky that dominates a white-hot desert landscape”. The origin of this cologne comes from perfumer, François Demachy, released to the market in 2015.
-        </p>
+        <div class="bottom-images">
+            <div class="bottom-images1">
+                <img src="../images/saint_laurent.jpg" alt="Image 4">
+                <p class="image-text">
+                    "The composition of the cologne, “Y Le Parfum is a sensual and intoxicating men’s fragrance by Yves Saint Laurent Beauté.  An intense interpretation of the Y signature scent, this men’s cologne is a new twist on the white and dark fougere that combines the bold, woody notes of Geranium and Cedarwood with fresh Lavender”. This is a personal favorite of mine.  The creator of this cologne is none other,  Yves Saint Laurent Beauté".
+                </p>
+            </div>
+            <div class="bottom-images2">
+                <img src="../images/Sauvage.jpg" alt="Image 5">
+                <p class="image-text">
+                    "Dior Sauvage Eau de Toilette opens with radiant top notes of Calabrian Bergamot, before Amberwood unleashes its powerfully woody trail. A Sauvage cologne for men inspired by wide-open spaces under a blue sky that dominates a white-hot desert landscape”. The origin of this cologne comes from perfumer, François Demachy, released to the market in 2015".
+                </p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

@@ -1,9 +1,6 @@
-/* styles.css */
-
-/* General styling for the entire page */
 body {
 	font-family: Arial, sans-serif;
-	background-color: rgb(96, 92, 92);
+	background-color: rgb(57, 56, 56);
 	margin: 0;
 }
 
@@ -12,9 +9,9 @@ body {
 	margin: 15px auto;
 }
 
-/* Calendar container */
+
 .container-calendar {
-	background: #ffffff;
+	background: #000000;
 	padding: 15px;
 	max-width: 900px;
 	margin: 0 auto;
@@ -22,18 +19,19 @@ body {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	display: flex;
 	justify-content: space-between;
+	color:#ffffff;
 }
 
-/* Event section styling */
+
 #event-section {
 	padding: 10px;
-	background: #f5f5f5;
+	background: #3c3b3b;
 	margin: 20px 0;
-	border: 1px solid #ccc;
+	border: 1px solid #ffffff;
 }
 
 .container-calendar #left h1 {
-	color: green;
+	color: rgb(0, 0, 0);
 	text-align: center;
 	background-color: #f2f2f2;
 	margin: 0;
@@ -41,7 +39,7 @@ body {
 }
 
 #event-section h3 {
-	color: green;
+	color: rgb(255, 255, 255);
 	font-size: 18px;
 	margin: 0;
 }
@@ -54,7 +52,7 @@ body {
 }
 
 #event-section button {
-	background: green;
+	background: rgb(0, 0, 0);
 	color: white;
 	border: none;
 	padding: 5px 10px;
@@ -77,11 +75,11 @@ body {
 	left: 0;
 }
 
-/* event tooltip styling */
+
 .event-tooltip {
 	position: absolute;
 	background-color: rgba(234, 232, 232, 0.763);
-	color: black;
+	color: #3c3b3b;
 	padding: 10px;
 	border-radius: 4px;
 	bottom: 20px;
@@ -97,7 +95,7 @@ body {
 	display: block;
 }
 
-/* Reminder section styling */
+
 #reminder-section {
 	padding: 10px;
 	background: #f5f5f5;
@@ -106,7 +104,7 @@ body {
 }
 
 #reminder-section h3 {
-	color: green;
+	color: rgb(0, 0, 0);
 	font-size: 18px;
 	margin: 0;
 }
@@ -121,7 +119,7 @@ body {
 	font-size: 16px;
 }
 
-/* Style for the delete buttons */
+
 .delete-event {
 	background: rgb(237, 19, 19);
 	color: white;
@@ -132,17 +130,17 @@ body {
 	align-items: right;
 }
 
-/* Buttons in the calendar */
+
 .button-container-calendar button {
 	cursor: pointer;
-	background: green;
+	background: rgb(0, 0, 0);
 	color: #fff;
-	border: 1px solid green;
+	border: 1px solid rgb(0, 0, 0);
 	border-radius: 4px;
 	padding: 5px 10px;
 }
 
-/* Calendar table */
+
 .table-calendar {
 	border-collapse: collapse;
 	width: 100%;
@@ -156,7 +154,7 @@ body {
 	vertical-align: top;
 }
 
-/* Date picker */
+
 .date-picker.selected {
 	background-color: #f2f2f2;
 	font-weight: bold;
@@ -167,31 +165,29 @@ body {
 	border-bottom: 2px solid currentColor;
 }
 
-/* Day-specific styling */
+
 .date-picker:nth-child(1) {
 	color: red;
-	/* Sunday */
 }
 
 .date-picker:nth-child(6) {
 	color: green;
-	/* Friday */
 }
 
-/* Hover effect for date cells */
+
 .date-picker:hover {
-	background-color: green;
+	background-color: rgb(95, 191, 226);
 	color: white;
 	cursor: pointer;
 }
 
-/* Header for month and year */
+
 #monthAndYear {
 	text-align: center;
 	margin-top: 0;
 }
 
-/* Navigation buttons */
+
 .button-container-calendar {
 	position: relative;
 	margin-bottom: 1em;
@@ -207,7 +203,7 @@ body {
 	float: right;
 }
 
-/* Footer styling */
+
 .footer-container-calendar {
 	margin-top: 1em;
 	border-top: 1px solid #dadada;

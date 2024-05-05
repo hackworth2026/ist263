@@ -49,6 +49,7 @@
 
         .titles{
             color: white;
+            font-family: 'Times New Roman', Times, serif;
         }
         
         .content {
@@ -81,6 +82,7 @@
             background-color: grey;
             padding: 10px;
             border-radius: 10px;
+            font-family:'Times New Roman', Times, serif;
         }
 
         h3{
@@ -89,7 +91,7 @@
             border-radius:10px;
         }
         h1,.h2,.h3{
-            font-family: "Schibsted Grotesk", sans-serif;
+            font-family: 'Times New Roman', Times, serif;
             font-optical-sizing: auto;
             font-weight: 500px;
             font-style: normal;
@@ -98,7 +100,7 @@
             color: white;
             display: flex;
             flex-direction: initial;
-            font-family: "Schibsted Grotesk", sans-serif;
+            font-family:'Times New Roman', Times, serif;
         }
        .page {
            font-size: 17px;
@@ -135,6 +137,18 @@
             margin: 0px;
             cursor: pointer;
         }
+        .skip{
+            background-color: #c9c206;
+            padding: 8px;
+            border: 2px solid #000000;
+            text-decoration: none;
+            position: absolute; 
+            top: 10px;
+            left:-999px; 
+        }
+        .skip:focus {  
+            left: 10px; 
+        }
     </style>
     <script>
         function openModal() {
@@ -151,6 +165,8 @@
 <body>
     <div class="type1">
             <nav class="split">
+
+                <a href="#skip" class="skip">Skip to Content</a><br>
 
                 <div class="AromaVouge">
                     <h2>AromaVouge</h2>
@@ -218,7 +234,7 @@
                 <div class="image">
                     <h2 class="CologneHead">Creed Aventus</h2>
                     <img src="../images/Creed.jpg" alt="Creed Aventus" class="creedBig">
-                    <p class="word2"> Annetta Waller (5/5): <br> “Ah, behold the Creed Aventus 50ML cologne, a scent so alluring it could make a stoic stone statue crack a grin! Picture this: a dash of sophistication, a sprinkle of charisma, and a hint of aristocratic allure – that's the power of Aventus!
+                    <p id= "skip" class="word2"> Annetta Waller (5/5): <br> “Ah, behold the Creed Aventus 50ML cologne, a scent so alluring it could make a stoic stone statue crack a grin! Picture this: a dash of sophistication, a sprinkle of charisma, and a hint of aristocratic allure – that's the power of Aventus!
 
                         With every spritz, you transform into a suave secret agent, ready to out-charm James Bond himself! People will follow your scent like lemmings, drawn to the magnetic pull of this olfactory masterpiece.
                         

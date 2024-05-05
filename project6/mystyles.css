@@ -196,8 +196,87 @@ nav {background-color:#000000;}
         .body {
          overflow-x: auto;
         }
+        nav.split a {
+           margin-right: 40px;
+        }
+
+        .top-images2 p {
+          margin-top: 10px;
+          float: right;
+          margin-left: 1;
+          font-size: 15px;
+          padding: 10px;
+      }
+
+      .top-images2 img {
+          width: 190px;
+          height: 294px;
+          margin: 20px;
+          margin-left: 195px;
+      }
+
+      .top-images1 p {
+        margin-top: 20px;
+        float: left;
+        margin-left: 1;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .top-images1 img {
+        width: 190px;
+        height: 310px;
+        margin: 20px;
+        margin-right:50px;
+    }
+
+      .wrapper{
+        width:50%;
+      }
 
       }
+
+@media only screen and (min-width: 700px){
+      .top-images2 p {
+        margin-top: 20px;
+        float: right;
+        margin-left: 1;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+      .top-images2 img {
+          width: 190px;
+          height: 294px;
+          margin: 20px;
+          margin-left: 195px;
+      }
+
+      .top-images1 p {
+        margin-top: 20px;
+        float: left;
+        margin-left: 1;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .top-images1 img {
+        width: 190px;
+        height: 310px;
+        margin: 20px;
+        margin-right:50px;
+    }
+
+}
+@media only screen and (min-width: 800px) {
+      nav.split a{
+        margin-left: 170px;
+        margin-right: 50px;
+        display: flex;
+        justify-content: center;
+      }
+  }
+
 .container {
     display: flex;
     flex-direction: column;

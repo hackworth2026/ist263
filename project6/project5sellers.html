@@ -119,11 +119,6 @@
             font-style: normal;
         }
 
-        nav.split a{
-            margin-left: 180px;
-            margin-right: 140px;
-      }
-
       .bottom-images1 p {
             margin-top: 20px;
             float: left;
@@ -153,6 +148,18 @@
             margin: 1%;
             margin-left: 195px;
         }
+        .skip{
+            background-color: #c6bf00;
+            padding: 8px;
+            border: 2px solid #000000;
+            text-decoration: none;
+            position: absolute; 
+            top: 10px;
+            left:-999px; 
+        }
+        .skip:focus {  
+            left: 10px; 
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -160,7 +167,7 @@
 </head>
 <body>
     <nav class="split">
-        
+        <a href="#skip" class="skip">Skip to Content</a><br>
         <div class="right">
             <a href="project5home.html">Home</a>
             <span class="seperator">|</span>
@@ -191,7 +198,7 @@
 
         <div class="middle-image">
             <img src="../images/black_polo.jpg" alt="Image 3">
-            <p class="image-text">
+            <p id="skip" class="image-text">
                 "The cologne is described to have a modern scent that reflects sophistication, with slight application of robust tropical tang. Its tastefully chosen tones emanate sophistication and make it appropriate for any setting. For individuals looking for a scent that matches their style and demeanor, Polo Black is the ideal option because of its classic appeal and affiliation with Ralph Lauren, creator". 
             </p>
         </div>
